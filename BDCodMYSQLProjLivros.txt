@@ -1,0 +1,19 @@
+use livros;
+
+CREATE TABLE aaa (
+ID_LIVRO INT AUTO_INCREMENT PRIMARY KEY,
+TITULO VARCHAR(100),
+AUTOR VARCHAR(254),
+ANO_PUBLICACAO INT
+);
+
+
+
+
+
+insert into livro (id_livro, titulo, autor, ano_publicacao) 
+values(1, 'Jogador Número 1', 'Ernest Cline', 2011) , 
+      (2, 'Divergente', 'Veronica Roth', 2011),
+      (3, 'Aurora Rising', 'Amie Kaufman e Jay Kristoff', 2019);
+      
+select * from livro
